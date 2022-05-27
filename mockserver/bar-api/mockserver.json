@@ -1,0 +1,19 @@
+{
+  "httpRequest": {
+    "method": "GET",
+    "path": "/bar/{name}",
+    "pathParameters": {
+      "name": [".+"]
+    }
+  },
+  "httpResponseTemplate": {
+    "template": "{ statusCode: 200, body: 'Hello {{ request.pathParameters.name.0 }} I am Bar!' }",
+    "templateType": "MUSTACHE"
+  },
+  "timeToLive": {
+    "unlimited": true
+  },
+  "times": {
+    "unlimited": true
+  }
+}

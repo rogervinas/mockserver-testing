@@ -1,0 +1,19 @@
+{
+  "httpRequest": {
+    "method": "GET",
+    "path": "/foo",
+    "queryStringParameters": {
+      "name": [".+"]
+    }
+  },
+  "httpResponseTemplate": {
+    "template": "{ statusCode: 200, body: 'Hello {{ request.queryStringParameters.name.0 }} I am Foo!' }",
+    "templateType": "MUSTACHE"
+  },
+  "timeToLive": {
+    "unlimited": true
+  },
+  "times": {
+    "unlimited": true
+  }
+}

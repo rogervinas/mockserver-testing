@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+
+  foo-api:
+    image: mockserver/mockserver:5.13.2
+    ports:
+      - "8080"
+    volumes:
+      - ./mockserver/foo-api/mockserver.json:/mockserver.json
+    environment:
+      - MOCKSERVER_SERVER_PORT=8080
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/mockserver.json
+
+  bar-api:
+    image: mockserver/mockserver:5.13.2
+    ports:
+      - "8080"
+    volumes:
+      - ./mockserver/bar-api/mockserver.json:/mockserver.json
+    environment:
+      - MOCKSERVER_SERVER_PORT=8080
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/mockserver.json
