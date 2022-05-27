@@ -24,7 +24,7 @@ And then we will use [MockServer Docker image](https://mock-server.com/mock_serv
 * [App](#app)
   * [App implementation](#app-implementation)
   * [App test with MockServerExtension](#app-test-with-mockserverextension)
-  * [App test with two MockServerClients](#app-test-with-two-mockserverclients)
+  * [App test with two MockServers](#app-test-with-two-mockservers)
   * [App test with MockServer Docker](#app-test-with-mockserver-docker)
     * [Static stubs](#static-stubs)
     * [Dynamic stubs](#dynamic-stubs)
@@ -262,9 +262,9 @@ class AppShouldWithOneMockServer {
 }
 ```
 
-### App test with two MockServerClients
+### App test with two MockServers
 
-But imagine a real scenario where **Foo API** and **Bar API** <u>do have conflicting endpoints</u>, or you just want to <u>mock them separatedly for any reason</u>. In this case you can use two **MockServerClients** instead of using **MockServerExtension**:
+But imagine a real scenario where **Foo API** and **Bar API** <u>do have conflicting endpoints</u>, or you just want to <u>mock them separatedly for any reason</u>. In this case you can use two **MockServers** instead of using **MockServerExtension**:
 
 ```kotlin
 @TestInstance(PER_CLASS)
