@@ -178,7 +178,7 @@ class FooKtorClientShould {
 
 Note that:
 * As in the previous test we can inject **MockServerClient** as a parameter in the test methods too.
-* MockServer provides also [Velocity](https://mock-server.com/mock_server/response_templates.html#velocity_templates) and [Javascript](https://mock-server.com/mock_server/response_templates.html#javascript_templates) templates that support more complex logic.
+* **MockServer** provides also [Velocity](https://mock-server.com/mock_server/response_templates.html#velocity_templates) and [Javascript](https://mock-server.com/mock_server/response_templates.html#javascript_templates) templates that support more complex logic.
 
 ### FooKtorClient implementation
 
