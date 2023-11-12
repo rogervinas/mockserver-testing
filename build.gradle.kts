@@ -1,5 +1,7 @@
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-import org.gradle.api.tasks.testing.logging.TestLogEvent.*
+import org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED
+import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
+import org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
 
 plugins {
   id("org.jetbrains.kotlin.jvm") version "1.9.20"
@@ -13,8 +15,8 @@ repositories {
 dependencies {
   implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-  implementation("io.ktor:ktor-client-core:1.6.7")
-  implementation("io.ktor:ktor-client-cio:1.6.7")
+  implementation("io.ktor:ktor-client-core:2.3.6")
+  implementation("io.ktor:ktor-client-cio:2.3.6")
 
   testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
   testImplementation("io.mockk:mockk:1.13.8")
@@ -27,7 +29,7 @@ dependencies {
 
 kotlin {
   jvmToolchain {
-    (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(21))
+    this.languageVersion.set(JavaLanguageVersion.of(21))
   }
 }
 
