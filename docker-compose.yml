@@ -3,7 +3,7 @@ version: "3.9"
 services:
 
   foo-api:
-    image: mockserver/mockserver:5.13.2
+    image: mockserver/mockserver:5.15.0
     ports:
       - "8080"
     volumes:
@@ -13,7 +13,7 @@ services:
       - MOCKSERVER_INITIALIZATION_JSON_PATH=/mockserver.json
 
   bar-api:
-    image: mockserver/mockserver:5.13.2
+    image: mockserver/mockserver:5.15.0
     ports:
       - "8080"
     volumes:
