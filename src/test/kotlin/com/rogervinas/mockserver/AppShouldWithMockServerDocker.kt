@@ -8,7 +8,7 @@ import org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS
 import org.mockserver.client.MockServerClient
 import org.mockserver.model.HttpRequest.request
 import org.mockserver.model.HttpResponse.response
-import org.testcontainers.containers.DockerComposeContainer
+import org.testcontainers.containers.ComposeContainer
 import org.testcontainers.containers.wait.strategy.Wait.forHttp
 import org.testcontainers.junit.jupiter.Container
 import org.testcontainers.junit.jupiter.Testcontainers
@@ -37,12 +37,10 @@ class AppShouldWithMockServerDocker {
 
     @Container
     @JvmStatic
-    val container = DockerComposeContainer<Nothing>(File("docker-compose.yml"))
-      .apply {
-        withLocalCompose(true)
-        withExposedService(fooServiceName, fooServicePort, waitForMockServerLiveness)
-        withExposedService(barServiceName, barServicePort, waitForMockServerLiveness)
-      }
+    val container = ComposeContainer(File("docker-compose.yml"))
+      .withLocalCompose(true)
+      .withExposedService(fooServiceName, fooServicePort, waitForMockServerLiveness)
+      .withExposedService(barServiceName, barServicePort, waitForMockServerLiveness)
 
     @BeforeAll
     @JvmStatic
