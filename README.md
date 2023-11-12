@@ -41,7 +41,6 @@ And then we will use [MockServer Docker image](https://mock-server.com/mock_serv
 
 ```kotlin
 interface BarClient {
-
   fun call(name: String): String
 }
 ```
@@ -122,7 +121,6 @@ class BarKtorClient(private val url: String) : BarClient {
 
 ```kotlin
 interface FooClient {
-  
   fun call(name: String): String
 }
 ```
