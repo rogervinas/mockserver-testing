@@ -2,7 +2,6 @@
 ![Java](https://img.shields.io/badge/Java-21-blue?labelColor=black)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.20-blue?labelColor=black)
 ![MockServer](https://img.shields.io/badge/MockServer-5.15.0-blue?labelColor=black)
->>>>>>> Stashed changes
 
 # MockServer Testing
 
