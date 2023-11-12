@@ -2,7 +2,7 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
 import org.gradle.api.tasks.testing.logging.TestLogEvent.*
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "1.6.0"
+  id("org.jetbrains.kotlin.jvm") version "1.9.20"
   application
 }
 
@@ -27,7 +27,7 @@ dependencies {
 
 kotlin {
   jvmToolchain {
-    (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(11))
+    (this as JavaToolchainSpec).languageVersion.set(JavaLanguageVersion.of(21))
   }
 }
 
