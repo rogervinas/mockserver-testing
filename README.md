@@ -1,4 +1,7 @@
 [![CI](https://github.com/rogervinas/mockserver-testing/actions/workflows/gradle.yml/badge.svg?branch=master)](https://github.com/rogervinas/mockserver-testing/actions/workflows/gradle.yml)
+![Java](https://img.shields.io/badge/Java-11-blue?labelColor=black)
+![Kotlin](https://img.shields.io/badge/Kotlin-1.6.0-blue?labelColor=black)
+![MockServer](https://img.shields.io/badge/MockServer-5.13.2-blue?labelColor=black)
 
 # MockServer Testing
 
