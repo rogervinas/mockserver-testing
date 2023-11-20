@@ -23,8 +23,8 @@ dependencies {
   testImplementation("org.assertj:assertj-core:3.24.2")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:5.15.0")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:5.15.0")
-  testImplementation("org.testcontainers:testcontainers:1.19.1")
-  testImplementation("org.testcontainers:junit-jupiter:1.19.1")
+  testImplementation("org.testcontainers:testcontainers:1.19.2")
+  testImplementation("org.testcontainers:junit-jupiter:1.19.2")
 }
 
 kotlin {
