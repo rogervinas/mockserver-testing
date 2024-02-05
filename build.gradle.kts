@@ -23,7 +23,7 @@ dependencies {
 
   testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")
   testImplementation("io.mockk:mockk:1.13.9")
-  testImplementation("org.assertj:assertj-core:3.25.2")
+  testImplementation("org.assertj:assertj-core:3.25.3")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
   testImplementation(platform("org.testcontainers:testcontainers-bom:1.19.4"))
