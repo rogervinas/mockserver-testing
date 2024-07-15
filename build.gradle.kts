@@ -22,8 +22,8 @@ dependencies {
   implementation("io.ktor:ktor-client-cio:$ktorClientVersion")
 
   testImplementation("org.junit.jupiter:junit-jupiter:5.10.3")
-  testImplementation("io.mockk:mockk:1.13.11")
-  testImplementation("org.assertj:assertj-core:3.26.0")
+  testImplementation("io.mockk:mockk:1.13.12")
+  testImplementation("org.assertj:assertj-core:3.26.3")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
   testImplementation(platform("org.testcontainers:testcontainers-bom:1.19.8"))
