@@ -4,7 +4,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 import org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "2.0.20"
+  id("org.jetbrains.kotlin.jvm") version "2.0.21"
   application
 }
 
@@ -13,7 +13,7 @@ repositories {
 }
 
 val mockServerVersion = "5.15.0"
-val ktorClientVersion = "2.3.12"
+val ktorClientVersion = "3.0.0"
 
 dependencies {
   implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -22,7 +22,7 @@ dependencies {
   implementation("io.ktor:ktor-client-cio:$ktorClientVersion")
 
   testImplementation("org.junit.jupiter:junit-jupiter:5.11.2")
-  testImplementation("io.mockk:mockk:1.13.12")
+  testImplementation("io.mockk:mockk:1.13.13")
   testImplementation("org.assertj:assertj-core:3.26.3")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
