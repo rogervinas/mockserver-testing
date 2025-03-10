@@ -31,7 +31,7 @@ dependencies {
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
 
-  testImplementation(platform("org.testcontainers:testcontainers-bom:1.20.5"))
+  testImplementation(platform("org.testcontainers:testcontainers-bom:1.20.6"))
   testImplementation("org.testcontainers:testcontainers")
   testImplementation("org.testcontainers:junit-jupiter")
 }
