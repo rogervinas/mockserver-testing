@@ -4,7 +4,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 import org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "2.1.10"
+  id("org.jetbrains.kotlin.jvm") version "2.1.20"
   application
 }
 
@@ -21,7 +21,7 @@ dependencies {
   implementation("io.ktor:ktor-client-core:$ktorClientVersion")
   implementation("io.ktor:ktor-client-cio:$ktorClientVersion")
 
-  testImplementation(platform("org.junit:junit-bom:5.12.0"))
+  testImplementation(platform("org.junit:junit-bom:5.12.1"))
   testImplementation("org.junit.jupiter:junit-jupiter")
   testImplementation("org.junit.jupiter:junit-jupiter-params")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
