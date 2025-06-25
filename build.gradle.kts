@@ -4,7 +4,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 import org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "2.1.21"
+  id("org.jetbrains.kotlin.jvm") version "2.2.0"
   application
 }
 
@@ -26,12 +26,12 @@ dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter-params")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-  testImplementation("io.mockk:mockk:1.14.2")
+  testImplementation("io.mockk:mockk:1.14.4")
   testImplementation("org.assertj:assertj-core:3.27.3")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
 
-  testImplementation(platform("org.testcontainers:testcontainers-bom:1.21.1"))
+  testImplementation(platform("org.testcontainers:testcontainers-bom:1.21.2"))
   testImplementation("org.testcontainers:testcontainers")
   testImplementation("org.testcontainers:junit-jupiter")
 }
