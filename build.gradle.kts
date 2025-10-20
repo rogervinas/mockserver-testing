@@ -13,7 +13,7 @@ repositories {
 }
 
 val mockServerVersion = "5.15.0"
-val ktorClientVersion = "3.3.0"
+val ktorClientVersion = "3.3.1"
 
 dependencies {
   implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -31,7 +31,7 @@ dependencies {
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
 
-  testImplementation(platform("org.testcontainers:testcontainers-bom:1.21.3"))
+  testImplementation(platform("org.testcontainers:testcontainers-bom:2.0.1"))
   testImplementation("org.testcontainers:testcontainers")
   testImplementation("org.testcontainers:junit-jupiter")
 }
