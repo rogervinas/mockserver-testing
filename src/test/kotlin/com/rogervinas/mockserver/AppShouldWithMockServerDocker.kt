@@ -38,7 +38,6 @@ class AppShouldWithMockServerDocker {
     @Container
     @JvmStatic
     val container = ComposeContainer(File("docker-compose.yml"))
-      .withLocalCompose(true)
       .withExposedService(fooServiceName, fooServicePort, waitForMockServerLiveness)
       .withExposedService(barServiceName, barServicePort, waitForMockServerLiveness)
 
