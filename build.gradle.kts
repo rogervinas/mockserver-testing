@@ -13,7 +13,7 @@ repositories {
 }
 
 val mockServerVersion = "5.15.0"
-val ktorClientVersion = "3.4.0"
+val ktorClientVersion = "3.4.1"
 
 dependencies {
   implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
