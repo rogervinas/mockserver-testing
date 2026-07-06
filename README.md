@@ -1,7 +1,7 @@
 [![CI](https://github.com/rogervinas/mockserver-testing/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/rogervinas/mockserver-testing/actions/workflows/ci.yml)
 ![Java](https://img.shields.io/badge/Java-21-blue?labelColor=black)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.x-blue?labelColor=black)
-![MockServer](https://img.shields.io/badge/MockServer-6.0.0-blue?labelColor=black)
+![MockServer](https://img.shields.io/badge/MockServer-6.1.0-blue?labelColor=black)
 
 # MockServer Testing
 
