@@ -13,7 +13,7 @@ repositories {
   mavenCentral()
 }
 
-val mockServerVersion = "7.2.0"
+val mockServerVersion = "7.4.0"
 val ktorClientVersion = "3.5.1"
 
 dependencies {
@@ -22,7 +22,7 @@ dependencies {
   implementation("io.ktor:ktor-client-core:$ktorClientVersion")
   implementation("io.ktor:ktor-client-cio:$ktorClientVersion")
 
-  testImplementation(platform("org.junit:junit-bom:6.1.0"))
+  testImplementation(platform("org.junit:junit-bom:6.1.1"))
   testImplementation("org.junit.jupiter:junit-jupiter")
   testImplementation("org.junit.jupiter:junit-jupiter-params")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
