@@ -13,7 +13,7 @@ repositories {
   mavenCentral()
 }
 
-val mockServerVersion = "6.0.0"
+val mockServerVersion = "6.1.0"
 val ktorClientVersion = "3.5.0"
 
 dependencies {
