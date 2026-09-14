@@ -5,7 +5,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED
 import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "2.4.10"
+  id("org.jetbrains.kotlin.jvm") version "2.4.20"
   application
 }
 
@@ -13,7 +13,7 @@ repositories {
   mavenCentral()
 }
 
-val mockServerVersion = "7.5.0"
+val mockServerVersion = "7.6.0"
 val ktorClientVersion = "3.5.2"
 
 dependencies {
