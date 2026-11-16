@@ -5,7 +5,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED
 import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 
 plugins {
-  id("org.jetbrains.kotlin.jvm") version "2.4.10"
+  id("org.jetbrains.kotlin.jvm") version "2.4.21"
   application
 }
 
@@ -13,8 +13,8 @@ repositories {
   mavenCentral()
 }
 
-val mockServerVersion = "7.5.0"
-val ktorClientVersion = "3.5.2"
+val mockServerVersion = "9.2.0"
+val ktorClientVersion = "3.6.1"
 
 dependencies {
   implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
@@ -27,7 +27,7 @@ dependencies {
   testImplementation("org.junit.jupiter:junit-jupiter-params")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
-  testImplementation("io.mockk:mockk:1.14.11")
+  testImplementation("io.mockk:mockk:1.14.12")
   testImplementation("org.assertj:assertj-core:3.27.7")
   testImplementation("org.mock-server:mockserver-client-java-no-dependencies:$mockServerVersion")
   testImplementation("org.mock-server:mockserver-junit-jupiter-no-dependencies:$mockServerVersion")
